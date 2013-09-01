@@ -8,6 +8,23 @@
 
 #import "SMSimulation.h"
 
+@interface SMSimulation ()
+
+@end
+
 @implementation SMSimulation
+
+-(id)init
+{
+    if (self = [super init])
+    {
+        //init
+        
+        _player = [SMPlayer new];
+        
+    }
+    
+    return self;
+}
 
 @end

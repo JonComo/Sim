@@ -17,11 +17,14 @@
 		86C14EED17D3E70300CF25E1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C14EEC17D3E70300CF25E1 /* Default@2x.png */; };
 		86C14EEF17D3E70300CF25E1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C14EEE17D3E70300CF25E1 /* Default-568h@2x.png */; };
 		86C14EF217D3E70300CF25E1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C14EF017D3E70300CF25E1 /* MainStoryboard.storyboard */; };
-		86C14EF517D3E70300CF25E1 /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14EF417D3E70300CF25E1 /* SMViewController.m */; };
 		86C14EFD17D3E79200CF25E1 /* SMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14EFC17D3E79200CF25E1 /* SMObject.m */; };
 		86C14F0117D3E83A00CF25E1 /* SMSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14F0017D3E83A00CF25E1 /* SMSimulation.m */; };
 		86C14F0417D3E84B00CF25E1 /* SMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14F0317D3E84B00CF25E1 /* SMPlayer.m */; };
 		86C14F0717D3E8E300CF25E1 /* SMPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14F0617D3E8E300CF25E1 /* SMPerson.m */; };
+		86C14F0A17D3EB1800CF25E1 /* SMNewGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14F0917D3EB1800CF25E1 /* SMNewGameViewController.m */; };
+		86C14F0E17D3EBBB00CF25E1 /* SMGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14F0D17D3EBBB00CF25E1 /* SMGame.m */; };
+		86C14F1017D3ECA100CF25E1 /* stats.xib in Resources */ = {isa = PBXBuildFile; fileRef = 86C14F0F17D3ECA100CF25E1 /* stats.xib */; };
+		86C14F1317D3ED0D00CF25E1 /* SMStatsView.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14F1217D3ED0D00CF25E1 /* SMStatsView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,8 +42,6 @@
 		86C14EEC17D3E70300CF25E1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		86C14EEE17D3E70300CF25E1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		86C14EF117D3E70300CF25E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		86C14EF317D3E70300CF25E1 /* SMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMViewController.h; sourceTree = "<group>"; };
-		86C14EF417D3E70300CF25E1 /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
 		86C14EFB17D3E79200CF25E1 /* SMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMObject.h; sourceTree = "<group>"; };
 		86C14EFC17D3E79200CF25E1 /* SMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMObject.m; sourceTree = "<group>"; };
 		86C14EFF17D3E83A00CF25E1 /* SMSimulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSimulation.h; sourceTree = "<group>"; };
@@ -49,6 +50,13 @@
 		86C14F0317D3E84B00CF25E1 /* SMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPlayer.m; sourceTree = "<group>"; };
 		86C14F0517D3E8E300CF25E1 /* SMPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPerson.h; sourceTree = "<group>"; };
 		86C14F0617D3E8E300CF25E1 /* SMPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPerson.m; sourceTree = "<group>"; };
+		86C14F0817D3EB1800CF25E1 /* SMNewGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMNewGameViewController.h; sourceTree = "<group>"; };
+		86C14F0917D3EB1800CF25E1 /* SMNewGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMNewGameViewController.m; sourceTree = "<group>"; };
+		86C14F0C17D3EBBB00CF25E1 /* SMGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMGame.h; sourceTree = "<group>"; };
+		86C14F0D17D3EBBB00CF25E1 /* SMGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMGame.m; sourceTree = "<group>"; };
+		86C14F0F17D3ECA100CF25E1 /* stats.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = stats.xib; sourceTree = "<group>"; };
+		86C14F1117D3ED0D00CF25E1 /* SMStatsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMStatsView.h; sourceTree = "<group>"; };
+		86C14F1217D3ED0D00CF25E1 /* SMStatsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMStatsView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +106,7 @@
 				86C14EE717D3E70300CF25E1 /* SMAppDelegate.h */,
 				86C14EE817D3E70300CF25E1 /* SMAppDelegate.m */,
 				86C14EF017D3E70300CF25E1 /* MainStoryboard.storyboard */,
-				86C14EF317D3E70300CF25E1 /* SMViewController.h */,
-				86C14EF417D3E70300CF25E1 /* SMViewController.m */,
+				86C14F0B17D3EB2500CF25E1 /* View */,
 				86C14EFE17D3E79A00CF25E1 /* Model */,
 				86C14EDF17D3E70300CF25E1 /* Supporting Files */,
 			);
@@ -123,16 +130,30 @@
 		86C14EFE17D3E79A00CF25E1 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				86C14EFB17D3E79200CF25E1 /* SMObject.h */,
-				86C14EFC17D3E79200CF25E1 /* SMObject.m */,
+				86C14F0C17D3EBBB00CF25E1 /* SMGame.h */,
+				86C14F0D17D3EBBB00CF25E1 /* SMGame.m */,
 				86C14EFF17D3E83A00CF25E1 /* SMSimulation.h */,
 				86C14F0017D3E83A00CF25E1 /* SMSimulation.m */,
+				86C14EFB17D3E79200CF25E1 /* SMObject.h */,
+				86C14EFC17D3E79200CF25E1 /* SMObject.m */,
 				86C14F0217D3E84B00CF25E1 /* SMPlayer.h */,
 				86C14F0317D3E84B00CF25E1 /* SMPlayer.m */,
 				86C14F0517D3E8E300CF25E1 /* SMPerson.h */,
 				86C14F0617D3E8E300CF25E1 /* SMPerson.m */,
+				86C14F1117D3ED0D00CF25E1 /* SMStatsView.h */,
+				86C14F1217D3ED0D00CF25E1 /* SMStatsView.m */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		86C14F0B17D3EB2500CF25E1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				86C14F0817D3EB1800CF25E1 /* SMNewGameViewController.h */,
+				86C14F0917D3EB1800CF25E1 /* SMNewGameViewController.m */,
+				86C14F0F17D3ECA100CF25E1 /* stats.xib */,
+			);
+			name = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,6 +213,7 @@
 				86C14EED17D3E70300CF25E1 /* Default@2x.png in Resources */,
 				86C14EEF17D3E70300CF25E1 /* Default-568h@2x.png in Resources */,
 				86C14EF217D3E70300CF25E1 /* MainStoryboard.storyboard in Resources */,
+				86C14F1017D3ECA100CF25E1 /* stats.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,11 +226,13 @@
 			files = (
 				86C14EE517D3E70300CF25E1 /* main.m in Sources */,
 				86C14EE917D3E70300CF25E1 /* SMAppDelegate.m in Sources */,
-				86C14EF517D3E70300CF25E1 /* SMViewController.m in Sources */,
 				86C14EFD17D3E79200CF25E1 /* SMObject.m in Sources */,
 				86C14F0117D3E83A00CF25E1 /* SMSimulation.m in Sources */,
 				86C14F0417D3E84B00CF25E1 /* SMPlayer.m in Sources */,
 				86C14F0717D3E8E300CF25E1 /* SMPerson.m in Sources */,
+				86C14F0A17D3EB1800CF25E1 /* SMNewGameViewController.m in Sources */,
+				86C14F0E17D3EBBB00CF25E1 /* SMGame.m in Sources */,
+				86C14F1317D3ED0D00CF25E1 /* SMStatsView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

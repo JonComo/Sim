@@ -8,6 +8,12 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SMPlayer.h"
+
 @interface SMSimulation : NSObject
+
+@property (nonatomic, strong) SMPlayer *player;
+
+@property int days;
 
 @end
