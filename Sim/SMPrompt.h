@@ -13,7 +13,7 @@
 @property (nonatomic, strong) NSString *text;
 @property (nonatomic, strong) NSArray *choices;
 
--(id)initWithPrompt:(NSString *)text choices:(NSArray *)choices;
++(SMPrompt *)prompt:(NSString *)text choices:(NSArray *)choices;
 
 -(void)pickChoiceAtIndex:(NSInteger)index;
 

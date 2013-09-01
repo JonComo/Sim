@@ -33,13 +33,13 @@
 -(void)startGame
 {
     
-    SMPrompt *buyAndSell = [[SMPrompt alloc] initWithPrompt:@"Buy or sell you mofo" choices:@[[SMChoice choiceWithText:@"Buy biotch" action:^{
+    SMPrompt *buyAndSell = [SMPrompt prompt:@"Buy or sell you mofo" choices:@[[SMChoice choiceWithText:@"Buy biotch" action:^{
         
         
-        [self setPrompt:[[SMPrompt alloc] initWithPrompt:@"Oh you bought, you sucka. Im going to kill you!" choices:@[[SMChoice choiceWithText:@"Run" action:^{
+        [self setPrompt:[SMPrompt prompt:@"Oh you bought, you sucka. Im going to kill you!" choices:@[[SMChoice choiceWithText:@"Run" action:^{
             
             
-            [self setPrompt:[[SMPrompt alloc] initWithPrompt:@"You lost 80 dollas" choices:@[[SMChoice choiceWithText:@"That sucks" action:^{
+            [self setPrompt:[SMPrompt prompt:@"You lost 80 dollas" choices:@[[SMChoice choiceWithText:@"That sucks" action:^{
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Yes" message:@"it does" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
                 [alert show];
             }]]]];
@@ -49,7 +49,7 @@
             
             
             
-            [self setPrompt:[[SMPrompt alloc] initWithPrompt:@"You killed him" choices:@[[SMChoice choiceWithText:@"Thats great" action:^{
+            [self setPrompt:[SMPrompt prompt:@"You killed him" choices:@[[SMChoice choiceWithText:@"Thats great" action:^{
                 UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Yes" message:@"it is" delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
                 [alert show];
             }]]]];
@@ -62,9 +62,6 @@
     } ], [SMChoice choiceWithText:@"Sell" action:^{
         self.player.money += 5;
     }]]];
-    
-    
-    
     
     [self setPrompt:buyAndSell];
 }

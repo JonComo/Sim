@@ -12,6 +12,13 @@
 
 @implementation SMPrompt
 
++(SMPrompt *)prompt:(NSString *)text choices:(NSArray *)choices
+{
+    SMPrompt *newPrompt = [[self alloc] initWithPrompt:text choices:choices];
+    
+    return newPrompt;
+}
+
 -(id)initWithPrompt:(NSString *)text choices:(NSArray *)choices
 {
     if (self = [super init]) {
