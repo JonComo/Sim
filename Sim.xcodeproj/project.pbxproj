@@ -19,6 +19,9 @@
 		86C14EF217D3E70300CF25E1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C14EF017D3E70300CF25E1 /* MainStoryboard.storyboard */; };
 		86C14EF517D3E70300CF25E1 /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14EF417D3E70300CF25E1 /* SMViewController.m */; };
 		86C14EFD17D3E79200CF25E1 /* SMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14EFC17D3E79200CF25E1 /* SMObject.m */; };
+		86C14F0117D3E83A00CF25E1 /* SMSimulation.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14F0017D3E83A00CF25E1 /* SMSimulation.m */; };
+		86C14F0417D3E84B00CF25E1 /* SMPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14F0317D3E84B00CF25E1 /* SMPlayer.m */; };
+		86C14F0717D3E8E300CF25E1 /* SMPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14F0617D3E8E300CF25E1 /* SMPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,12 @@
 		86C14EF417D3E70300CF25E1 /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
 		86C14EFB17D3E79200CF25E1 /* SMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMObject.h; sourceTree = "<group>"; };
 		86C14EFC17D3E79200CF25E1 /* SMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMObject.m; sourceTree = "<group>"; };
+		86C14EFF17D3E83A00CF25E1 /* SMSimulation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMSimulation.h; sourceTree = "<group>"; };
+		86C14F0017D3E83A00CF25E1 /* SMSimulation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMSimulation.m; sourceTree = "<group>"; };
+		86C14F0217D3E84B00CF25E1 /* SMPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPlayer.h; sourceTree = "<group>"; };
+		86C14F0317D3E84B00CF25E1 /* SMPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPlayer.m; sourceTree = "<group>"; };
+		86C14F0517D3E8E300CF25E1 /* SMPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMPerson.h; sourceTree = "<group>"; };
+		86C14F0617D3E8E300CF25E1 /* SMPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +125,12 @@
 			children = (
 				86C14EFB17D3E79200CF25E1 /* SMObject.h */,
 				86C14EFC17D3E79200CF25E1 /* SMObject.m */,
+				86C14EFF17D3E83A00CF25E1 /* SMSimulation.h */,
+				86C14F0017D3E83A00CF25E1 /* SMSimulation.m */,
+				86C14F0217D3E84B00CF25E1 /* SMPlayer.h */,
+				86C14F0317D3E84B00CF25E1 /* SMPlayer.m */,
+				86C14F0517D3E8E300CF25E1 /* SMPerson.h */,
+				86C14F0617D3E8E300CF25E1 /* SMPerson.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -191,6 +206,9 @@
 				86C14EE917D3E70300CF25E1 /* SMAppDelegate.m in Sources */,
 				86C14EF517D3E70300CF25E1 /* SMViewController.m in Sources */,
 				86C14EFD17D3E79200CF25E1 /* SMObject.m in Sources */,
+				86C14F0117D3E83A00CF25E1 /* SMSimulation.m in Sources */,
+				86C14F0417D3E84B00CF25E1 /* SMPlayer.m in Sources */,
+				86C14F0717D3E8E300CF25E1 /* SMPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

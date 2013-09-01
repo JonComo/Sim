@@ -1,5 +1,5 @@
 //
-//  SMObject.h
+//  SMSimulation.h
 //  Sim
 //
 //  Created by Jon Como on 9/1/13.
@@ -8,9 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SMObject : NSObject
-
-@property float value;
-@property (nonatomic, strong) NSString *name;
+@interface SMSimulation : NSObject
 
 @end

@@ -1,5 +1,5 @@
 //
-//  SMObject.h
+//  SMPerson.h
 //  Sim
 //
 //  Created by Jon Como on 9/1/13.
@@ -8,9 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SMObject : NSObject
+@interface SMPerson : NSObject
 
-@property float value;
 @property (nonatomic, strong) NSString *name;
 
 @end
