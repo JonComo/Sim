@@ -1,34 +1,40 @@
 //
-//  SMNewGameViewController.m
+//  SMSimulationViewController.m
 //  Sim
 //
 //  Created by Jon Como on 9/1/13.
 //  Copyright (c) 2013 Jon Como. All rights reserved.
 //
 
-#import "SMNewGameViewController.h"
+#import "SMSimulationViewController.h"
 
 #import "SMGame.h"
-
 #import "SMStatsView.h"
 
-@interface SMNewGameViewController () <UITextFieldDelegate>
+@interface SMSimulationViewController () < UICollectionViewDelegate, SMSimulationDelegate>
 {
-    __weak IBOutlet UITextField *textFieldName;
+    SMGame *game;
+    
+    __weak IBOutlet UILabel *labelPrompt;
+    __weak IBOutlet UICollectionView *collectionViewChoices;
 }
 
 @end
 
-@implementation SMNewGameViewController
+@implementation SMSimulationViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [[SMGame sharedManager] newSimulation];
+    game = [SMGame sharedManager];
+    game.simulation.collectionViewChoices = collectionViewChoices;
+    game.simulation.delegate = self;
     
     [self addStatsView];
+    
+    [game.simulation startGame];
 }
 
 - (void)didReceiveMemoryWarning
@@ -50,21 +56,9 @@
     [self.view addSubview:statsView];
 }
 
-- (IBAction)startGame:(id)sender
+-(void)simulation:(SMSimulation *)simulation updatedPrompt:(SMPrompt *)prompt
 {
-    [self performSegueWithIdentifier:@"startGameSegue" sender:self];
-}
-
--(BOOL)textFieldShouldReturn:(UITextField *)textField
-{
-    if (textField == textFieldName)
-    {
-        [SMGame sharedManager].simulation.player.name = textField.text;
-    }
-    
-    [textField resignFirstResponder];
-    
-    return YES;
+    labelPrompt.text = prompt.text;
 }
 
 @end

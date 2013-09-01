@@ -8,12 +8,30 @@
 
 #import <Foundation/Foundation.h>
 
+#import "SMPrompt.h"
+
 #import "SMPlayer.h"
 
-@interface SMSimulation : NSObject
+@class SMSimulation;
 
+@protocol SMSimulationDelegate <NSObject>
+
+@optional
+-(void)simulation:(SMSimulation *)simulation updatedPrompt:(SMPrompt *)prompt;
+
+@end
+
+@interface SMSimulation : NSObject <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+
+@property (nonatomic, weak) id <SMSimulationDelegate>delegate;
+
+@property (nonatomic, strong) SMPrompt *currentPrompt;
 @property (nonatomic, strong) SMPlayer *player;
-
 @property int days;
+
+@property (nonatomic, weak) UICollectionView *collectionViewChoices;
+
+
+-(void)startGame;
 
 @end

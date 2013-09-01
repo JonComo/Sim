@@ -1,5 +1,5 @@
 //
-//  SMStatsView.h
+//  SMSimulationViewController.h
 //  Sim
 //
 //  Created by Jon Como on 9/1/13.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SMStatsView : UIView
-
--(void)setup;
+@interface SMSimulationViewController : UIViewController
 
 @end

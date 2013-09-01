@@ -23,14 +23,19 @@
     if (self){
         // Initialization code
         
-        [[SMGame sharedManager].simulation addObserver:self forKeyPath:@"days" options:NSKeyValueObservingOptionNew context:NULL];
         
-        [[SMGame sharedManager].simulation.player addObserver:self forKeyPath:@"money" options:NSKeyValueObservingOptionNew context:NULL];
-        
-        [self update];
     }
     
     return self;
+}
+
+-(void)setup
+{
+    [[SMGame sharedManager].simulation addObserver:self forKeyPath:@"days" options:NSKeyValueObservingOptionNew context:NULL];
+    
+    [[SMGame sharedManager].simulation.player addObserver:self forKeyPath:@"money" options:NSKeyValueObservingOptionNew context:NULL];
+    
+    [self update];
 }
 
 -(void)update
@@ -38,7 +43,7 @@
     int days = [SMGame sharedManager].simulation.days;
     float money = [SMGame sharedManager].simulation.player.money;
     
-    NSString *output = [NSString stringWithFormat:@"Days: %i $: %.2f", days, money];
+    NSString *output = [NSString stringWithFormat:@"Day: %i $%.2f", days, money];
     
     labelOutput.text = output;
 }
