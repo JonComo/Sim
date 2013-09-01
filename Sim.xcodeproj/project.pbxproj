@@ -18,6 +18,7 @@
 		86C14EEF17D3E70300CF25E1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 86C14EEE17D3E70300CF25E1 /* Default-568h@2x.png */; };
 		86C14EF217D3E70300CF25E1 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86C14EF017D3E70300CF25E1 /* MainStoryboard.storyboard */; };
 		86C14EF517D3E70300CF25E1 /* SMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14EF417D3E70300CF25E1 /* SMViewController.m */; };
+		86C14EFD17D3E79200CF25E1 /* SMObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 86C14EFC17D3E79200CF25E1 /* SMObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,8 @@
 		86C14EF117D3E70300CF25E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		86C14EF317D3E70300CF25E1 /* SMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SMViewController.h; sourceTree = "<group>"; };
 		86C14EF417D3E70300CF25E1 /* SMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SMViewController.m; sourceTree = "<group>"; };
+		86C14EFB17D3E79200CF25E1 /* SMObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMObject.h; sourceTree = "<group>"; };
+		86C14EFC17D3E79200CF25E1 /* SMObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,7 @@
 				86C14EF017D3E70300CF25E1 /* MainStoryboard.storyboard */,
 				86C14EF317D3E70300CF25E1 /* SMViewController.h */,
 				86C14EF417D3E70300CF25E1 /* SMViewController.m */,
+				86C14EFE17D3E79A00CF25E1 /* Model */,
 				86C14EDF17D3E70300CF25E1 /* Supporting Files */,
 			);
 			path = Sim;
@@ -105,6 +109,15 @@
 				86C14EEE17D3E70300CF25E1 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		86C14EFE17D3E79A00CF25E1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				86C14EFB17D3E79200CF25E1 /* SMObject.h */,
+				86C14EFC17D3E79200CF25E1 /* SMObject.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,6 +190,7 @@
 				86C14EE517D3E70300CF25E1 /* main.m in Sources */,
 				86C14EE917D3E70300CF25E1 /* SMAppDelegate.m in Sources */,
 				86C14EF517D3E70300CF25E1 /* SMViewController.m in Sources */,
+				86C14EFD17D3E79200CF25E1 /* SMObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
