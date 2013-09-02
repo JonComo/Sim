@@ -36,26 +36,22 @@
 - (IBAction)buyChoice:(id)sender {
     
     [[SMInteraction sharedInstance] performInteractionWithType:SMInteractionTypeBuy];
-    [[SMInteraction sharedInstance] executePrompt];
 }
 
 - (IBAction)sellChoice:(id)sender {
     
     [[SMInteraction sharedInstance] performInteractionWithType:SMInteractionTypeSell];
-    [[SMInteraction sharedInstance] executePrompt];
     
 }
 
 - (IBAction)flyToChoice:(id)sender {
     
     [[SMInteraction sharedInstance] performInteractionWithType:SMInteractionTypeFly];
-    [[SMInteraction sharedInstance] executePrompt];
     
 }
 
 - (IBAction)payDebt:(id)sender {
     
     [[SMInteraction sharedInstance] performInteractionWithType:SMInteractionTypePay];
-    [[SMInteraction sharedInstance] executePrompt];
 }
 @end
