@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		338157E117D40186006CCA90 /* SMInteraction.m in Sources */ = {isa = PBXBuildFile; fileRef = 338157E017D40186006CCA90 /* SMInteraction.m */; };
+		338157E417D401F5006CCA90 /* SMInteractionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 338157E317D401F5006CCA90 /* SMInteractionVC.m */; };
 		86C14ED917D3E70300CF25E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C14ED817D3E70300CF25E1 /* UIKit.framework */; };
 		86C14EDB17D3E70300CF25E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C14EDA17D3E70300CF25E1 /* Foundation.framework */; };
 		86C14EDD17D3E70300CF25E1 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86C14EDC17D3E70300CF25E1 /* CoreGraphics.framework */; };
@@ -31,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		338157DF17D40186006CCA90 /* SMInteraction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMInteraction.h; sourceTree = "<group>"; };
+		338157E017D40186006CCA90 /* SMInteraction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMInteraction.m; sourceTree = "<group>"; };
+		338157E217D401F5006CCA90 /* SMInteractionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SMInteractionVC.h; sourceTree = "<group>"; };
+		338157E317D401F5006CCA90 /* SMInteractionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SMInteractionVC.m; sourceTree = "<group>"; };
 		86C14ED517D3E70300CF25E1 /* Sim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		86C14ED817D3E70300CF25E1 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		86C14EDA17D3E70300CF25E1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -155,6 +161,8 @@
 				86C14F1B17D3F4D500CF25E1 /* SMPrompt.m */,
 				86C14F1D17D3F5D500CF25E1 /* SMChoice.h */,
 				86C14F1E17D3F5D500CF25E1 /* SMChoice.m */,
+				338157DF17D40186006CCA90 /* SMInteraction.h */,
+				338157E017D40186006CCA90 /* SMInteraction.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -167,6 +175,8 @@
 				86C14F0F17D3ECA100CF25E1 /* stats.xib */,
 				86C14F1417D3F22B00CF25E1 /* SMSimulationViewController.h */,
 				86C14F1517D3F22B00CF25E1 /* SMSimulationViewController.m */,
+				338157E217D401F5006CCA90 /* SMInteractionVC.h */,
+				338157E317D401F5006CCA90 /* SMInteractionVC.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -251,6 +261,8 @@
 				86C14F1617D3F22B00CF25E1 /* SMSimulationViewController.m in Sources */,
 				86C14F1C17D3F4D500CF25E1 /* SMPrompt.m in Sources */,
 				86C14F1F17D3F5D500CF25E1 /* SMChoice.m in Sources */,
+				338157E117D40186006CCA90 /* SMInteraction.m in Sources */,
+				338157E417D401F5006CCA90 /* SMInteractionVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +385,7 @@
 				86C14EFA17D3E70300CF25E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
